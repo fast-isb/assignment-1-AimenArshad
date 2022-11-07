@@ -26,10 +26,10 @@ export default function  NavBar(){
           hideIn="xs"
           variant="highlight-rounded"
         >
-          <Navbar.Link href="./profile">My Profile </Navbar.Link>
+          <Navbar.Link href="#/profile">My Profile </Navbar.Link>
 
-          <Navbar.Link href="./updateProfile">Update Profile</Navbar.Link>
-          <Navbar.Link href="./announcements">Announcements</Navbar.Link>
+          <Navbar.Link href="#/updateProfile">Update Profile</Navbar.Link>
+          <Navbar.Link href="#/announcements">Announcements</Navbar.Link>
           <Navbar.Link>Customer Service</Navbar.Link>
         </Navbar.Content>
         <Navbar.Content
