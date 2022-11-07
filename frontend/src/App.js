@@ -8,7 +8,7 @@ import NavBar from './components/navbar';
 
  function App() {
    return (
-     <div >
+     
        <>
        <NavBar/>
        <Routes>
@@ -18,7 +18,7 @@ import NavBar from './components/navbar';
          <Route path='*' element={<h1>Welcome to HMS</h1>} />
        </Routes >
       </>
-     </div>
+     
    );
  }
 export default App;
