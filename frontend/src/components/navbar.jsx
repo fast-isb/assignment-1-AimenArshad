@@ -6,7 +6,7 @@ import { AcmeLogo } from "./acmelogo.jsx";
 export default function  NavBar(){
   return (
     <Layout>
-      <Navbar isBordered variant="sticky">
+      <Navbar data-testid = "navbartest" isBordered variant="sticky">
         <Navbar.Toggle showIn="xs" />
         <Navbar.Brand
           css={{
