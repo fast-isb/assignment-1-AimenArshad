@@ -6,7 +6,7 @@ import { AcmeLogo } from "./acmelogo.jsx";
 export default function  NavBar(){
   return (
     <Layout>
-      <Navbar isBordered variant="sticky">
+      <Navbar data-testid = "navbartest" isBordered variant="sticky">
         <Navbar.Toggle showIn="xs" />
         <Navbar.Brand
           css={{
@@ -15,8 +15,8 @@ export default function  NavBar(){
             },
           }}
         >
-          <AcmeLogo />
-          <Text b color="inherit" hideIn="xs">
+          <AcmeLogo/>
+          <Text data-testid="texttest" b color="inherit" hideIn="xs">
             HSM
           </Text>
         </Navbar.Brand>
@@ -26,9 +26,8 @@ export default function  NavBar(){
           hideIn="xs"
           variant="highlight-rounded"
         >
-          <Navbar.Link href="#/profile">My Profile </Navbar.Link>
-
-          <Navbar.Link href="#/updateProfile">Update Profile</Navbar.Link>
+          <Navbar.Link href="#/profile" data-testid="myprofiletest">My Profile </Navbar.Link>
+          <Navbar.Link href="#/updateProfile" role="link">Update Profile</Navbar.Link>
           <Navbar.Link href="#/announcements">Announcements</Navbar.Link>
           <Navbar.Link>Customer Service</Navbar.Link>
         </Navbar.Content>
