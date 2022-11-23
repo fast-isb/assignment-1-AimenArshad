@@ -15,7 +15,7 @@ export default function Profile() {
 
   return (
 
-    <div>
+    <div data-testid="testprofile">
     {(typeof resident.fname==='undefined' )? (<p>Loading Data...</p>):(
     <div>
      <h1>hello</h1>

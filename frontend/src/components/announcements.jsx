@@ -20,7 +20,7 @@ function Announcements() {
   return (
 
 
-    <div>
+    <div data-testid="testannouncements">
 
     {(typeof Annoucement[0]==='undefined')? (<p>  Loading... </p>): (
 

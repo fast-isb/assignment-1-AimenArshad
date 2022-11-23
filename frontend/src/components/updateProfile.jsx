@@ -49,10 +49,10 @@ export default function UpdateProfile() {
   return (
 
 
-    <div>
+    <div data-testid="test03">
     {(typeof resident.fname==='undefined' )? (<p>Loading Data...</p>):(
-    <div>
-     <h1>hello</h1>
+    <div data-testid="test04">
+     <h1>Housing Management Society</h1>
           <Card css={{height:"auto",width:"auto",alignItems:"center"}}>
           <Card.Header>
             <h1>Modify Your Profile</h1>
@@ -84,7 +84,7 @@ export default function UpdateProfile() {
           <Card.Divider />
           <Card.Footer>
             <Row justify="flex-end">
-            <Button auto color="secondary" rounded flat onClick={fieldCheck}>
+            <Button role="button" auto color="secondary" rounded flat onClick={fieldCheck}>
               Save
             </Button>
             </Row>
