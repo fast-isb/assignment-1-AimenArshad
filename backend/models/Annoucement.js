@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-mongoose.connect('mongodb://localhost:27017/scdProject');
+mongoose.connect('mongodb+srv://shahid0981:shahid0981@cluster0.6c0iksh.mongodb.net/test');
 const Schema = mongoose.Schema;
 const Annoucement = new Schema({
     date : { type: Date, required : true},
